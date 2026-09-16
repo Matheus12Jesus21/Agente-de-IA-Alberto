@@ -5,7 +5,7 @@
 ### Problema
 > Qual problema financeiro seu agente resolve?
 
-[Sua descrição aqui]
+Controle finaçeiro pessoal e controle finaçeiro como empreendedor(a) (controle finaçeiro para pequenos negócios).
 
 ### Solução
 > Como o agente resolve esse problema de forma proativa?
