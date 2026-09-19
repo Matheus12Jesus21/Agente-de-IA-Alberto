@@ -17,8 +17,6 @@ Ele explica sobre o assunto falando por etapas se necessário/pedido, de uma for
 
 Pessoas que estão começando a entrar na fase adulta, adolescentes e até pessoas que querem iniciar um pequeno negócio mas não tem muita educação finaceira.
 
----
-
 ### Persona e Tom de Voz
 
 Educativo, educado, consultivo, direto, completo e coerente.
@@ -74,12 +72,29 @@ flowchart TD
 
 ### Estratégias Adotadas
 
-- [ ] [ex: Agente só responde com base nos dados fornecidos]
-- [ ] [ex: Respostas incluem fonte da informação]
-- [ ] [ex: Quando não sabe, admite e redireciona]
-- [ ] [ex: Não faz recomendações de investimento sem perfil do cliente]
+- O agente consulta apenas bases de conhecimento fechadas e validadas via RAG, bloqueando respostas baseadas em inferências externas.
+
+- Toda resposta gerada é cruzada com a base de origem e acompanha a citação do documento consultado.
+
+- A temperatura do modelo é ajustada para zero e os prompts proíbem qualquer suposição na ausência de dados.
+
+- A resposta passa por filtros automáticos de verificação lógica e sintática antes de ser exibida.
+
+- Casos com baixo nível de confiança no processamento são encaminhados diretamente para revisão humana.
+
+- O sistema é programado para admitir o desconhecimento da informação em vez de formular respostas sem fundamentação.
 
 ### Limitações Declaradas
 > O que o agente NÃO faz?
 
-[Liste aqui as limitações explícitas do agente]
+- O agente não toma decisões financeiras críticas de forma autônoma nem opera sem mecanismos de interrupção para evitar perdas ou desvios.
+
+- Ele não acessa dados além do estritamente essencial para a operação, respeitando a LGPD, a confidencialidade e os protocolos de criptografia.
+
+- O sistema não executa ações que violem as normas do Banco Central, da CVM ou da legislação brasileira, nem gera discriminação ou viés nas análises.
+
+- Ele não realiza operações descontroladas entre plataformas financeiras nem emite recomendações generativas automáticas em cenários críticos.
+
+- A ferramenta não prioriza a velocidade em detrimento da precisão operacional, nem realiza procedimentos sem manter o registro auditável das decisões.
+
+- O agente não atua fora do escopo delimitado para substituir atribuições humanas, nem opera sem a supervisão de profissionais capacitados.
