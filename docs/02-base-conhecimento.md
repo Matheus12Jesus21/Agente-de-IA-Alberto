@@ -2,15 +2,13 @@
 
 ## Dados Utilizados
 
-Descreva se usou os arquivos da pasta `data`, por exemplo:
-
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `historico_atendimento.csv` | CSV | Contextualizar interações anteriores |
-| `perfil_investidor.json` | JSON | Personalizar recomendações |
-| `produtos_financeiros.json` | JSON | Sugerir produtos adequados ao perfil |
-| `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
-| 'x'| X | X |
+| `transacoes_e_fluxo_caixa.csv` | CSV | Analisar gastos, receitas e custos (PF/PJ) |
+| `historico_atendimentos_e_metas.csv` | CSV | Acompanhar histórico, tarefas e metas |
+| `perfil_e_diagnostico.json` | JSON | Personalizar atendimento com dados do cliente |
+| `produtos_investimento_e_credito.json` | JSON | Recomendar investimentos e crédito |
+| `base_conceitos_didaticos.json` | JSON | Explicar conceitos e fórmulas financeiras |
 
 
 ---
