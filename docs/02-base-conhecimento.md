@@ -12,8 +12,6 @@ Descreva se usou os arquivos da pasta `data`, por exemplo:
 | `transacoes.csv` | CSV | Analisar padrão de gastos do cliente |
 | 'x'| X | X |
 
-> [!TIP]
-> **Quer um dataset mais robusto?** Você pode utilizar datasets públicos do [Hugging Face](https://huggingface.co/datasets) relacionados a finanças, desde que sejam adequados ao contexto do desafio.
 
 ---
 
@@ -41,26 +39,36 @@ Os arquivos de conceitos e produtos vão fixos no system prompt como manual de r
 
 ## Exemplo de Contexto Montado
 
-Dados do Cliente
-​Nome: Mariana Costa
-​Perfil: PF / Conservador
-​Faturamento/Renda: R$ 5.200
-​Custos Fixos: R$ 2.800
-​Nível de Endividamento: Moderado
-​Capacidade de Aporte: R$ 600
-​Objetivo: Quitar dívidas e investir
-​Últimas Transações
-​02/11: Entrada (Salário) — R$ 5.200
-​04/11: Condomínio e Energia — R$ 950
-​06/11: Farmácia — R$ 180
-​08/11: Fatura do Cartão — R$ 2.100
-​Histórico de Atendimentos
-​10/10: Recomendado renegociar fatura do cartão
-​18/10: Mapear despesas supérfluas
-​Status: Concluído (100%)
-​Produtos Recomendados
-​Tesouro Selic 2029: Renda Fixa | Risco: Muito Baixo | Liquidez: D+1
-​Empréstimo Consignado: Linha de Crédito | Taxa: Baixa
-​Base de Conceitos
-​Reserva de Emergência: 3 a 6 meses do custo de vida
-​Taxa Selic: Taxa básica de juros da economia
+**Dados do Cliente**
+
+- **Nome:** Mariana Costa  
+- **Perfil:** PF / Conservador  
+- **Faturamento/Renda:** R$ 5.200  
+- **Custos Fixos:** R$ 2.800  
+- **Nível de Endividamento:** Moderado  
+- **Capacidade de Aporte:** R$ 600  
+- **Objetivo:** Quitar dívidas e investir  
+
+**Últimas Transações**
+
+- **02/11:** Entrada (Salário) — R$ 5.200  
+- **04/11:** Condomínio e Energia — R$ 950  
+- **06/11:** Farmácia — R$ 180  
+- **08/11:** Fatura do Cartão — R$ 2.100  
+
+**Histórico de Atendimentos**
+
+- **10/10:** Recomendado renegociar fatura do cartão  
+- **18/10:** Mapear despesas supérfluas  
+- **Status:** Concluído (100%)  
+
+**Produtos Recomendados**
+
+- **Tesouro Selic 2029:** Renda Fixa | Risco: Muito Baixo | Liquidez: D+1  
+- **Empréstimo Consignado:** Linha de Crédito | Taxa: Baixa  
+
+**Base de Conceitos**
+
+- **Reserva de Emergência:** 3 a 6 meses do custo de vida  
+- **Taxa Selic:** Taxa básica de juros da economia  
+
