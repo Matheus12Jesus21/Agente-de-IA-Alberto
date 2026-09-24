@@ -101,7 +101,6 @@ REGRAS:
 
 ## Observações e Aprendizados
 
-> Registre aqui ajustes que você fez nos prompts e por quê.
-
-- [Observação 1]
-- [Observação 2]
+-**Observação 1:** ​As respostas de exceção foram padronizadas estritamente com os exemplos de linguagem do Documento 1 para garantir coerência no tom de voz.
+​
+-**Observação 2:** As instruções do System Prompt foram alinhadas em etapas didáticas para refletir o comportamento de professor/consultor do agente Alberto.
