@@ -4,6 +4,7 @@ Esta pasta contém o código do seu agente financeiro.
 
 ## Estrutura 
 
+```text
 agente_financeiro/
 ├── data/
 │   ├── transacoes_e_fluxo_caixa.csv
