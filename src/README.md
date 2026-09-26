@@ -2,23 +2,26 @@
 
 Esta pasta contém o código do seu agente financeiro.
 
-## Estrutura Sugerida
+## Estrutura 
 
-```
-src/
-├── app.py              # Aplicação principal (Streamlit/Gradio)
-├── agente.py           # Lógica do agente
-├── config.py           # Configurações (API keys, etc.)
-└── requirements.txt    # Dependências
-```
+agente_financeiro/
+├── data/
+│   ├── transacoes_e_fluxo_caixa.csv
+│   ├── historico_atendimentos_e_metas.csv
+│   ├── perfil_e_diagnostico.json
+│   ├── produtos_investimento_e_credito.json
+│   └── base_conceitos_didaticos.json
+└── src/
+    ├── requirements.txt
+    ├── config.py
+    ├── agente.py
+    └── app.py
+## Requirements.txt
 
-## Exemplo de requirements.txt
-
-```
 streamlit
 openai
 python-dotenv
-```
+
 
 ## Como Rodar
 
