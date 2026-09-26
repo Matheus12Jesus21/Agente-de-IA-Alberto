@@ -1,0 +1,48 @@
+[
+  {
+    "id": "PROD_01",
+    "nome": "Tesouro Selic 2029",
+    "categoria": "Renda Fixa Pública",
+    "risco": "Muito Baixo (Garantia do Tesouro Nacional)",
+    "liquidez": "D+1 (Resgate em 1 dia útil)",
+    "rentabilidade": "100% da Taxa Selic",
+    "aplicacao_minima": 150.00,
+    "indicacao_didatica": "Ideal para montar Reserva de Emergência (PF) ou Reserva de Caixa (PJ). Rende diariamente e tem o menor risco do mercado."
+  },
+  {
+    "id": "PROD_02",
+    "nome": "CDB Banco Sofisa / Inter 100%+ do CDI",
+    "categoria": "Renda Fixa Privada",
+    "risco": "Baixo (Garantia do FGC até R$ 250 mil)",
+    "liquidez": "Diária (Resgate imediato)",
+    "rentabilidade": "100% a 110% do CDI",
+    "aplicacao_minima": 1.00,
+    "indicacao_didatica": "Excelente opção complementar para reserva de oportunidade e metas de curto prazo (até 1 ano)."
+  },
+  {
+    "id": "PROD_03",
+    "nome": "LCI / LCA do Banco do Brasil",
+    "categoria": "Renda Fixa com Isenção Fiscal",
+    "risco": "Baixo (Garantia do FGC)",
+    "liquidez": "Após carência de 90 a 365 dias",
+    "rentabilidade": "85% a 92% do CDI (Isento de Imposto de Renda para PF)",
+    "aplicacao_minima": 1000.00,
+    "indicacao_didatica": "Ideal para objetivos de médio prazo (1 a 3 anos). Por ser isento de IR para Pessoa Física, costuma render mais que CDBs tradicionais no mesmo prazo."
+  },
+  {
+    "id": "PROD_04",
+    "nome": "PRONAMPE (Programa Nacional de Apoio às Microempresas)",
+    "categoria": "Linha de Crédito PJ",
+    "taxa_juros": "Selic + 6% ao ano",
+    "prazos": "Até 48 meses (com até 12 meses de carência)",
+    "indicacao_didatica": "Destinado exclusivamente para MEI e Pequenas Empresas (PJ). Excelente para financiamento de capital de giro, compra de equipamentos ou reforma do negócio."
+  },
+  {
+    "id": "PROD_05",
+    "nome": "Empréstimo Consignado PF",
+    "categoria": "Linha de Crédito PF",
+    "taxa_juros": "Baixa (1,5% a 2,5% ao mês - desconto direto em folha)",
+    "prazos": "Até 84 meses",
+    "indicacao_didatica": "Ferramenta de reorganização financeira. Indicado para a estratégia de 'troca de dívida cara por dívida barata' (quitar o cartão de crédito ou cheque especial que cobram mais de 10% ao mês)."
+  }
+]

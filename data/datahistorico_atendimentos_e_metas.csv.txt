@@ -1,0 +1,4 @@
+data_atendimento,cliente,resumo_orientacao,tarefa_atribuida,status_meta,percentual
+10/10/2026,Mariana Costa,Análise de dívidas no cartão,Renegociar fatura do cartão,Em andamento,50%
+02/11/2026,Carlos Eduardo,Separação de contas PF/PJ,Abrir conta PJ separada,Concluido,100%
+15/11/2026,Beatriz Lima,Estruturação de investimentos,Definir valor de aporte em Renda Fixa e Ações,Pendente,0%

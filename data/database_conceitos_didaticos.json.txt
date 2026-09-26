@@ -1,0 +1,38 @@
+{
+  "metodologia_ensino": {
+    "tom_de_voz": "Didático, empático, prático e sem 'financês'.",
+    "estrutura_resposta": "1. Explicar o conceito de forma simples; 2. Mostrar a fórmula/lógica; 3. Aplicar diretamente nos dados reais do cliente."
+  },
+  "conceitos_pf": {
+    "reserva_de_emergencia": {
+      "definicao": "Valor guardado para cobrir imprevistos (demissão, saúde, urgências) sem precisar recorrer a empréstimos ou juros altos.",
+      "meta_recomendada": "3 a 6 meses do custo fixo mensal (para CLT) ou 6 a 12 meses (para autônomos e MEI).",
+      "onde_investir": "Apenas aplicações de altíssima liquidez (resgate diário) e baixo risco: Tesouro Selic, CDB 100%+ do CDI com liquidez diária ou Caixinhas com resgate imediato."
+    },
+    "quitacao_de_dividas": {
+      "metodo_bola_de_neve": "Listar todas as dívidas e focar os pagamentos extras na menor dívida primeiro para gerar motivação psicológica.",
+      "metodo_avalanche": "Focar os pagamentos extras na dívida com a maior taxa de juros (ex: cartão rotativo ou cheque especial) para economizar dinheiro no total."
+    },
+    "regra_50_30_20": {
+      "definicao": "Método de divisão orçamentária simples.",
+      "divisao": "50% para Necessidades/Custos Fixos (aluguel, contas), 30% para Desejos Pessoais (lazer, compras) e 20% para Prioridades Financeiras (quitar dívidas ou investir)."
+    }
+  },
+  "conceitos_pj_mei": {
+    "separacao_pf_pj": {
+      "regra_de_ouro": "Nunca misturar o caixa da empresa com a conta pessoal. A empresa deve ter conta bancária e CNPJ próprios.",
+      "pro_labore": "O salário fixo que o sócio/empreendedor recebe da empresa pelo seu trabalho diário. Entra como custo fixo no caixa da empresa.",
+      "distribuicao_de_lucros": "Retirada de valor variável feita apenas quando a empresa apura lucro líquido real (sobra de caixa após pagar custos, impostos e pró-labore)."
+    },
+    "gestao_de_caixa": {
+      "margem_de_contribuicao": "Valor que sobra de cada venda para pagar os custos fixos. Fórmula: (Receita de Vendas - Custos Variáveis).",
+      "ponto_de_equilibrio": "O faturamento mínimo que a empresa precisa atingir no mês para não ter prejuízo nem lucro (zero a zero). Fórmula: Custos Fixos Totais / Margem de Contribuição (%).",
+      "capital_de_giro": "Recurso financeiro necessário para manter a empresa funcionando enquanto os recebimentos de vendas não entram no caixa."
+    }
+  },
+  "indicadores_mercado": {
+    "selic": "Taxa básica de juros da economia brasileira definida pelo Banco Central. Regula os rendimentos da renda fixa e o custo dos empréstimos.",
+    "cdi": "Taxa de juros dos empréstimos entre bancos. Segue muito de perto a Taxa Selic (geralmente 0,10% abaixo dela).",
+    "ipca": "Índice oficial de inflação no Brasil. Mede o aumento do custo de vida e a perda do poder de compra."
+  }
+}
