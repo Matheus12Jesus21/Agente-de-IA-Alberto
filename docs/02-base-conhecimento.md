@@ -4,11 +4,11 @@
 
 | Arquivo | Formato | Utilização no Agente |
 |---------|---------|---------------------|
-| `transacoes_e_fluxo_caixa.csv` | CSV | Analisar gastos, receitas e custos (PF/PJ) |
-| `historico_atendimentos_e_metas.csv` | CSV | Acompanhar histórico, tarefas e metas |
-| `perfil_e_diagnostico.json` | JSON | Personalizar atendimento com dados do cliente |
-| `produtos_investimento_e_credito.json` | JSON | Recomendar investimentos e crédito |
-| `base_conceitos_didaticos.json` | JSON | Explicar conceitos e fórmulas financeiras |
+| `datatransacoes_e_fluxo_caixa.csv` | CSV | Analisar gastos, receitas e custos (PF/PJ) |
+| `datahistorico_atendimentos_e_metas.csv` | CSV | Acompanhar histórico, tarefas e metas |
+| `dataperfil_e_diagnostico.json` | JSON | Personalizar atendimento com dados do cliente |
+| `dataprodutos_investimento_e_credito.json` | JSON | Recomendar investimentos e crédito |
+| `database_conceitos_didaticos.json` | JSON | Explicar conceitos e fórmulas financeiras |
 
 
 ---
