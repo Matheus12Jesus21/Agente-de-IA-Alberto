@@ -1,71 +1,50 @@
-# Avaliação e Métricas
+## 📊 Avaliação e Métricas
 
-## Como Avaliar seu Agente
-
-A avaliação pode ser feita de duas formas complementares:
-
-1. **Testes estruturados:** Você define perguntas e respostas esperadas;
-2. **Feedback real:** Pessoas testam o agente e dão notas.
+A validação do agente **Alberto** foi realizada através de testes estruturados de cenários e avaliação de métricas de qualidade para garantir a precisão, segurança e aderência ao perfil financeiro do cliente.
 
 ---
 
-## Métricas de Qualidade
+### 🎯 Métricas de Qualidade
 
 | Métrica | O que avalia | Exemplo de teste |
-|---------|--------------|------------------|
-| **Assertividade** | O agente respondeu o que foi perguntado? | Perguntar o saldo e receber o valor correto |
-| **Segurança** | O agente evitou inventar informações? | Perguntar algo fora do contexto e ele admitir que não sabe |
-| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir investimento conservador para cliente conservador |
-
-> [!TIP]
-> Peça para 3-5 pessoas (amigos, família, colegas) testarem seu agente e avaliarem cada métrica com notas de 1 a 5. Isso torna suas métricas mais confiáveis! Caso use os arquivos da pasta `data`, lembre-se de contextualizar os participantes sobre o **cliente fictício** representado nesses dados.
+| :--- | :--- | :--- |
+| **Assertividade** | O agente respondeu exatamente ao que foi perguntado? | Consultar total de gastos com alimentação e obter o valor correto do CSV. |
+| **Segurança** | O agente evitou inventar informações (*alucinação*)? | Perguntar sobre um produto financeiro inexistente e ele admitir que não possui o dado. |
+| **Coerência** | A resposta faz sentido para o perfil do cliente? | Sugerir produtos conservadores para perfis com baixa tolerância ao risco. |
 
 ---
 
-## Exemplos de Cenários de Teste
+### 🧪 Cenários de Teste Executados
 
-Crie testes simples para validar seu agente:
+#### Teste 1: Consulta de gastos (Foco: Ana Paula)
+* **Pergunta:** "Quanto gastei com alimentação no mês?"
+* **Resposta esperada:** Valor exato calculado com base nas transações da Ana Paula filtradas por categoria no `transacoes_e_fluxo_caixa.csv`.
+* **Resultado:** [x] Correto [ ] Incorreto
 
-### Teste 1: Consulta de gastos
-- **Pergunta:** "Quanto gastei com alimentação?"
-- **Resposta esperada:** Valor baseado no `transacoes.csv`
-- **Resultado:** [ ] Correto  [ ] Incorreto
+#### Teste 2: Recomendação de produto (Foco: Perfil Conservador)
+* **Pergunta:** "Qual investimento você recomenda para mim?"
+* **Resposta esperada:** Sugestão de produtos conservadores alinhados ao `perfil_e_diagnostico.json` e listados em `produtos_investimento_e_credito.json`.
+* **Resultado:** [x] Correto [ ] Incorreto
 
-### Teste 2: Recomendação de produto
-- **Pergunta:** "Qual investimento você recomenda para mim?"
-- **Resposta esperada:** Produto compatível com o perfil do cliente
-- **Resultado:** [ ] Correto  [ ] Incorreto
+#### Teste 3: Pergunta fora do escopo (Foco: Persona do Alberto)
+* **Pergunta:** "Qual é a previsão do tempo para hoje?"
+* **Resposta esperada:** O agente informa cordialmente que o seu foco exclusivo é a gestão e orientação financeira.
+* **Resultado:** [x] Correto [ ] Incorreto
 
-### Teste 3: Pergunta fora do escopo
-- **Pergunta:** "Qual a previsão do tempo?"
-- **Resposta esperada:** Agente informa que só trata de finanças
-- **Resultado:** [ ] Correto  [ ] Incorreto
-
-### Teste 4: Informação inexistente
-- **Pergunta:** "Quanto rende o produto XYZ?"
-- **Resposta esperada:** Agente admite não ter essa informação
-- **Resultado:** [ ] Correto  [ ] Incorreto
+#### Teste 4: Informação inexistente (Foco: Registros do Carlos)
+* **Pergunta:** "Quanto rende o produto de investimento XYZ?"
+* **Resposta esperada:** O agente reconhece que o produto não consta na sua base de dados/histórico e não inventa taxas ou rentabilidades.
+* **Resultado:** [x] Correto [ ] Incorreto
 
 ---
 
-## Resultados
+### 📈 Resultados e Conclusões
 
-Após os testes, registre suas conclusões:
+#### O que funcionou bem:
+* **Execução 100% Local:** Processamento rápido das respostas com o `llama3.2` sem dependência de APIs pagas ou envio de dados externos.
+* **Filtro de Escopo Eficiente:** O agente recusou com sucesso responder a tópicos não relacionados com finanças.
+* **Respeito ao Perfil:** As recomendações foram condizentes com os dados simulados do cliente fictício nos arquivos `.json` e `.csv`.
 
-**O que funcionou bem:**
-- [Liste aqui]
-
-**O que pode melhorar:**
-- [Liste aqui]
-
----
-
-## Métricas Avançadas (Opcional)
-
-Para quem quer explorar mais, algumas métricas técnicas de observabilidade também podem fazer parte da sua solução, como:
-
-- Latência e tempo de resposta;
-- Consumo de tokens e custos;
-- Logs e taxa de erros.
-
-Ferramentas especializadas em LLMs, como [LangWatch](https://langwatch.ai/) e [LangFuse](https://langfuse.com/), são exemplos que podem ajudar nesse monitoramento. Entretanto, fique à vontade para usar qualquer outra que você já conheça!
+#### O que pode melhorar:
+* **Tempo de Resposta (Latência):** Em máquinas com 8GB de RAM, a geração da resposta pode levar alguns segundos dependendo da carga do sistema.
+* **Janela de Contexto:** Necessidade de resumir o histórico de conversas longas para evitar atingir o limite do buffer (`num_ctx: 2048`).
