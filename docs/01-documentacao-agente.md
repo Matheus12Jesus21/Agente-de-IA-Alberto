@@ -61,11 +61,11 @@ flowchart TD
 ### Componentes
 
 | Componente | Descrição |
-|------------|-----------|
-| Interface | [ex: Chatbot em Streamlit] |
-| LLM | [ex: GPT-4 via API] |
-| Base de Conhecimento | [ex: JSON/CSV com dados do cliente] |
-| Validação | [ex: Checagem de alucinações] |
+| :--- | :--- |
+| **Interface** | Chatbot local interativo feito em Streamlit |
+| **LLM** | Modelo LLaMA 3.2 rodando via Ollama |
+| **Base de Conhecimento** | Arquivos CSV e JSON com dados fictícios |
+| **Validação** | Testes de assertividade segurança e coerência |
 
 ---
 
