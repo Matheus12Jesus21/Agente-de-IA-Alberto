@@ -1,0 +1,6 @@
+data,cliente,tipo_conta,descricao,categoria,tipo_custo,valor,natureza
+02/11/2026,Mariana Costa,PF,Salario,Renda,Fixo,5200.00,Entrada
+08/11/2026,Mariana Costa,PF,Fatura Cartao,Cartao,Variavel,2100.00,Saida
+10/11/2026,Carlos Eduardo,PJ,Venda Servicos Oficina,Receita,Variavel,4500.00,Entrada
+12/11/2026,Carlos Eduardo,PJ,Aluguel Galpao,Instalacoes,Fixo,2500.00,Saida
+15/11/2026,Beatriz Lima,PF,Consultoria TI,Renda,Fixo,9800.00,Entrada

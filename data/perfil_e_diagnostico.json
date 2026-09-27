@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "nome": "Mariana Costa",
+    "tipo_pessoa": "PF",
+    "perfil_risco": "Conservador",
+    "faturamento_renda": 5200.00,
+    "custos_fixos": 2800.00,
+    "nivel_endividamento": "Moderado",
+    "capacidade_aporte": 600.00,
+    "objetivo": "Quitar dívidas do cartão e criar reserva de emergência"
+  },
+  {
+    "id": 2,
+    "nome": "Carlos Eduardo (Oficina do Cadu)",
+    "tipo_pessoa": "MEI / PJ",
+    "perfil_risco": "Moderado",
+    "faturamento_renda": 12500.00,
+    "custos_fixos": 7200.00,
+    "nivel_endividamento": "Baixo",
+    "capacidade_aporte": 2000.00,
+    "objetivo": "Separar conta PF da PJ e comprar um novo equipamento para a oficina"
+  },
+  {
+    "id": 3,
+    "nome": "Beatriz Lima",
+    "tipo_pessoa": "PF",
+    "perfil_risco": "Arrojado",
+    "faturamento_renda": 9800.00,
+    "custos_fixos": 4100.00,
+    "nivel_endividamento": "Nenhum",
+    "capacidade_aporte": 3500.00,
+    "objetivo": "Montar carteira de investimentos diversificada com foco em longo prazo"
+  }
+]
